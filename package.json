@@ -1,0 +1,25 @@
+{
+  "name": "node.js_youtube",
+  "version": "1.0.0",
+  "description": "- FullStack > front <br/> - pug - js > back <br/> - node.js - mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wondonghwi/node.js_youtube.git"
+  },
+  "keywords": [],
+  "author": "wondonghwi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wondonghwi/node.js_youtube/issues"
+  },
+  "homepage": "https://github.com/wondonghwi/node.js_youtube#readme",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
+}

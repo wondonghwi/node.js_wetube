@@ -1,4 +1,4 @@
-# pug , Node.js를 이용한 youtube Project
+# pug , Node.js를 이용한 wetube Project
 - FullStack
 > front <br/>
 - pug
