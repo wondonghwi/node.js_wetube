@@ -1,4 +1,4 @@
-# pug, Node.js(expresa)를 이용한 wetube Project
+# pug, Node.js(express)를 이용한 wetube Project
 - FullStack
 > front <br/>
 - pug
