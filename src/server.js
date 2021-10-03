@@ -9,8 +9,8 @@ const PORT = 4000;
 const app = express();
 const logger = morgan('dev');
 
+app.set('view engine', 'pug');
 app.use(logger); //app.use는 항상 최상위 위치에 있어야함 global
-
 app.use('/', globalRouter);
 app.use('/users', userRouter);
 app.use('/videos', videoRouter);
