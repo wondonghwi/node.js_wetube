@@ -2,7 +2,7 @@
 
 > front stack<br/>
 
-- pug
+- pug (template)
 - js
 
 > back stack<br/>
