@@ -1,8 +1,20 @@
 import Video from '../../models/Video';
 
-export const home = (req, res) => {
-  Video.find({}, (error, videos) => {});
-  return res.render('home', { pageTitle: 'Home' });
+export const home = async (req, res) => {
+  //TODO 콜백 처리방식
+
+  // Video.find({}, (error, videos) => {
+  //   return res.render('home', { pageTitle: 'Home', videos });
+  // });
+
+  //TODO Promise 처리방식
+  try {
+    const videos = await Video.find({});
+    return res.render('home', { pageTitle: 'Home', videos });
+  } catch (error) {
+    console.log(error);
+    return res.render('server-error');
+  }
 };
 export const watch = (req, res) => {
   const { id } = req.params;
