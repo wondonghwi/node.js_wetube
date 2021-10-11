@@ -9,7 +9,7 @@ export const home = async (req, res) => {
 
   //TODO Promise 처리방식
   try {
-    const videos = await Video.find({});
+    const videos = await Video.find({}).sort({ createdAt: 'desc' });
     return res.render('home', { pageTitle: 'Home', videos });
   } catch (error) {
     console.log(error);
@@ -74,4 +74,10 @@ export const deleteVideo = async (req, res) => {
   const { id } = req.params;
   await Video.findByIdAndDelete(id);
   return res.redirect('/');
+};
+
+export const search = (req, res) => {
+  const { keyword } = req.query;
+  console.log(keyword);
+  return res.render('search', { pageTitle: 'Search' });
 };
