@@ -9,7 +9,7 @@ export const home = async (req, res) => {
 
   //TODO Promise 처리방식
   try {
-    const videos = await Video.find({}).sort({ createdAt: 'desc' });
+    const videos = await Video.find({}).sort({ createdAt: 'desc' }).populate('owner');
     return res.render('home', { pageTitle: 'Home', videos });
   } catch (error) {
     console.log(error);
@@ -116,7 +116,7 @@ export const search = async (req, res) => {
       title: {
         $regex: new RegExp(keyword, 'i'),
       },
-    });
+    }).populate('owner');
   }
   return res.render('search', { pageTitle: 'Search', videos });
 };
