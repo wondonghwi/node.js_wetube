@@ -27,6 +27,7 @@ const handleMuteClick = e => {
 };
 
 const handleVolumeChange = event => {
+  console.log(event.target.value);
   const {
     target: { value },
   } = event;
