@@ -1,7 +1,7 @@
 # 나만의 유튜브 만들기 Project wetube Project (FullStack)
 
 > stack
-- pug (template) / vanilaJs / node.js / express / mongo DB 사용
+- pug (template) / Vanilla.js / node.js / express / mongo DB 사용
 - OAUTH2 로그인 (github로그인 구현)
 - 비디오 커스텀 / 비디오 업로드 기능 + 수정 + 삭제 + 댓글 + 비디오녹화 + 다운 기능 구현
 
